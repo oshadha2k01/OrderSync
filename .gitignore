@@ -1,0 +1,66 @@
+## Source: https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Log]/
+[L]og/
+
+# Visual Studio 2015/2017/2019/2022 cache directory
+.vs/
+# Generated user settings files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains Rider / IntelliJ
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.userprefs
+*.pidb
+
+# Mono auto generated files
+*.pidb
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored as of NuGet 2.7
+**/packages/
+# Templates
+*.tlog
+*.log
+
+# Publish output
+*.[Pp]ublish.xml
+*.publishxml
+
+# Environment variables & secrets
+.env
+.env.*
+secrets.json
+appsettings.local.json
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
