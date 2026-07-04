@@ -21,5 +21,11 @@ namespace SalesAPI.Infrastructure.Data
                 .HasForeignKey(i => i.SalesOrderId)
                 .OnDelete(DeleteBehavior.Cascade);
         }
+
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            // Set default precision and scale for all decimal properties to (18, 2)
+            configurationBuilder.Properties<decimal>().HavePrecision(18, 2);
+        }
     }
 }
