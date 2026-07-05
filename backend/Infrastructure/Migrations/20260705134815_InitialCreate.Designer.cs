@@ -12,7 +12,7 @@ using SalesAPI.Infrastructure.Data;
 namespace Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260704135826_InitialCreate")]
+    [Migration("20260705134815_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

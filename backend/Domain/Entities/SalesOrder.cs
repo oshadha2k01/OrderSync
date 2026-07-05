@@ -12,7 +12,6 @@ namespace SalesAPI.Domain.Entities
         public string? Note { get; set; }
         public int? ClientId { get; set; }
         
-        // Snapshot fields
         public string CustomerName { get; set; } = string.Empty;
         public string? Address1 { get; set; }
         public string? Address2 { get; set; }

@@ -34,7 +34,6 @@ namespace SalesAPI.API.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            // Use AutoMapper to convert DTO to Domain Entity
             var salesOrder = _mapper.Map<SalesOrder>(orderDto);
 
             await _orderRepo.AddOrderAsync(salesOrder);
