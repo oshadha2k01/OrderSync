@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-secondary/30 font-sans">
         {/* Navigation Bar */}
-        <nav className="bg-white border-b border-border shadow-sm sticky top-0 z-50">
+        <nav className="bg-white border-b border-border shadow-sm sticky top-0 z-50 no-print">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex">

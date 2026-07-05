@@ -7,8 +7,13 @@ export const fetchOrders = createAsyncThunk('orders/fetchOrders', async () => {
 });
 
 export const saveOrder = createAsyncThunk('orders/saveOrder', async (orderData) => {
-    const response = await api.post('/SalesOrders', orderData);
-    return response.data;
+    if (orderData.id) {
+        const response = await api.put(`/SalesOrders/${orderData.id}`, orderData);
+        return response.data;
+    } else {
+        const response = await api.post('/SalesOrders', orderData);
+        return response.data;
+    }
 });
 
 const orderSlice = createSlice({

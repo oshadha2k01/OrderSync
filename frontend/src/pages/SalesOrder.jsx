@@ -99,8 +99,11 @@ const SalesOrder = () => {
                     <h2 className="text-center font-bold text-gray-800">Sales Order</h2>
                 </div>
                 
-                <div className="p-4 border-b border-gray-400">
+                <div className="p-4 border-b border-gray-400 flex gap-2 no-print">
                     <ActionButton onClick={handleSave} label="Save Order" icon="✔" />
+                    {header.id && (
+                        <ActionButton onClick={() => window.print()} label="Print Order" icon="🖨" />
+                    )}
                 </div>
 
                 <div className="p-4 grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-gray-400">

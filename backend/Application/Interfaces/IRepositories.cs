@@ -18,5 +18,6 @@ namespace SalesAPI.Application.Interfaces
     {
         Task<IEnumerable<SalesOrder>> GetAllOrdersAsync();
         Task AddOrderAsync(SalesOrder order);
+        Task<SalesOrder?> GetOrderByIdAsync(int id);
     }
 }

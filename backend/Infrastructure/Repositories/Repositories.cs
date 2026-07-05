@@ -35,6 +35,11 @@ namespace SalesAPI.Infrastructure.Repositories
         {
             await _context.SalesOrder.AddAsync(order);
         }
+
+        public async Task<SalesOrder?> GetOrderByIdAsync(int id)
+        {
+            return await _context.SalesOrder.Include(o => o.Items).FirstOrDefaultAsync(o => o.Id == id);
+        }
     }
 
     public class UnitOfWork : IUnitOfWork
